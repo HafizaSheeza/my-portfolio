@@ -80,7 +80,7 @@ const Wrapper = styled.section`
 
 footer{
     background-color:#0a1435;
-    padding:14rem 0 9rem 0;
+    padding:14rem 0 3rem 0;
     color:#fff;
    
    p{
@@ -97,7 +97,7 @@ footer{
         grid-template-columns: 1fr 1.2fr .5fr .8fr ;
       
         justify-content:center;
-        align:items:center;
+        align-items:center;
         margin:3rem  auto;
     }
     .footer-social--icons{

@@ -5,7 +5,8 @@ import Service from "./Service";
 const Home = () => {
     const data = {
         name: "Sheeza Nawaz",
-        image: "https://hamna.dev/static/media/about.4f48d797b62491663893.gif"
+        // image: "https://hamna.dev/static/media/about.4f48d797b62491663893.gif"
+        image:"./Images/pro.jpg"
     }
     return (<>
         <Herosection {...data} />

@@ -8,7 +8,7 @@ const Header = () => {
     return (<>
 
         <MainHeader> <NavLink to="/">
-            <img src={logo} alt="reason" width="200px" height="auto" className='logo' />
+            <img src="./Images/sign.png" alt="reason" width="200px" height="auto" className='logo' />
         </NavLink>
             <Navbar /></MainHeader>
     </>)
@@ -21,8 +21,9 @@ const MainHeader = styled.header`
    display:flex;
    justify-content:space-between;
    align-items:center;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 .logo{
-    margin-top:10px;
+    margin-top:-15px;
 }
 @media (max-width:${({ theme }) => theme.media.mobile}) {
 

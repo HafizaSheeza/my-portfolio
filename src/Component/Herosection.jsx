@@ -10,7 +10,7 @@ const Herosection = (props) => {
             <GlobalStyle />
             <div className="container grid grid-two-columns">
                 <div className="section-hero-data">
-                    <p className="hero-top-data"> Hi,This is me</p>
+                    <p className="hero-top-data"> Hi,This is me <span class="wave">👋</span></p>
                     <h1 className="hero-heading"> {props.name}</h1>
                     <p className="hero-para">I'm a React developer. and strong team player who is able to quickly learn and apply new technologies. </p>
                     <Button className="btn hireme-btn"><NavLink to='./contact'>Hire Me</NavLink></Button>
@@ -33,10 +33,64 @@ padding:9rem 0;
 .section-hero-img{
     display:flex;
     justify-content:center;
+   
     align-items:center;
 }
 picture{
     text-align:center;
+   
+}
+.wave {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: wave-animation;
+    animation-name: wave-animation;
+    display: inline-block;
+    -webkit-transform-origin: 70% 70%;
+    transform-origin: 70% 70%;
+    font-size: 20px;
+}
+@keyframes  wave-animation {
+    0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+}
+10% {
+    -webkit-transform: rotate(14deg);
+    transform: rotate(14deg);
+}
+20% {
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+30% {
+    -webkit-transform: rotate(14deg);
+    transform: rotate(14deg);
+} 
+40% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
+50% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+60% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+}
+}
+a{
+    cursor: pointer;
+}
+picture img{
+    border-radius: 100%;
+    border: 5px solid #6254f3;
+    width:300px !important;
+    height: 300px;
+    object-fit: cover;
 }
 .hero-img{
      width:100%;

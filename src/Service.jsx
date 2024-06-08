@@ -12,10 +12,10 @@ const Service = () => {
             </h2>
             <div className="container grid grid-three-columns">
                 {
-                    Data.map((curElem) => {
-                        const { id, imgsrc, title, description } = curElem;
+                    Data.map((curElem, index) => {
+                        const { imgsrc } = curElem;
                         return (<>
-                            <div key={id} className="card">
+                            <div key={index} className="card">
                                 <figure>
                                     <img src={imgsrc} alt="" width="100px" />
                                 </figure>
@@ -104,6 +104,6 @@ padding:3rem 0;
     .grid-three-columns {
       grid-template-columns: 1fr;
     }
-
+  }
 `;
 export default Service;
