@@ -10,9 +10,9 @@ const Herosection = (props) => {
             <GlobalStyle />
             <div className="container grid grid-two-columns">
                 <div className="section-hero-data">
-                    <p className="hero-top-data"> Hi,This is me <span class="wave">👋</span></p>
+                    <p className="hero-top-data"> Hi, This is me <span class="wave">👋</span></p>
                     <h1 className="hero-heading"> {props.name}</h1>
-                    <p className="hero-para">I'm a Front end developer. and strong team player who is able to quickly learn and apply new technologies. </p>
+                    <p className="hero-para">I'm a React developer. and strong team player who is able to quickly learn and apply new technologies. </p>
                     <Button className="btn hireme-btn"><NavLink to='./contact'>Hire Me</NavLink></Button>
                 </div>
                 <div className="section-hero-img">
