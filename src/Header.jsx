@@ -3,15 +3,22 @@ import Navbar from './Navbar';
 import logo from './Images/logo.png';
 import styled from 'styled-components';
 import React from 'react';
+// import lightImage from './public/Images/logo2.png';
+// import darkImage from './public/Images/logo-1.png';
 
+const Logo =  styled.img`
+    width:40px;
+    height:40px;
+    margin-top: 10px;
+`
 const Header = ({isOn, handleToggle }) => {
     return (<>
 
         <MainHeader> <NavLink to="/">
-            Sheeza Nawaz
+            {/* Sheeza Nawaz */}
 
-
-            {/* <img src="./Images/sign.png" alt="reason" width="200px" height="auto" className='logo' /> */}
+<Logo src ={isOn? './Images/logo-1.png':'./Images/logo2.png'  } />
+            {/* <img src="./Images/logo2.png" alt="reason" width="60px" height="auto" className='logo' /> */}
         </NavLink   >
         
            <Navbar  isOn={isOn} handleToggle={handleToggle}/>
@@ -29,7 +36,7 @@ const MainHeader = styled.header`
    box-shadow:${({ theme }) => theme.colors.headershadow};
    border-bottom: 1px solid ${({ theme }) => theme.colors.border_header};
 .logo{
-    margin-top:-15px;
+    margin-top:10px;
 }
 a{
     font-size: 3rem;

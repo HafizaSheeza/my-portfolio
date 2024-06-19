@@ -19,9 +19,9 @@ import Projects from './Projects';
 
 const lightTheme = {
   colors: {
-    heading: "black",
-    text: "black",
-    white: "#fff",
+    heading: "#050505",
+    text: "#050505",
+    white: "#e4e6eb",
     helper: "#8490ff",
     bg: "rgb(249 249 255)",
     footer_bg: "#0a1435",
@@ -38,9 +38,9 @@ const lightTheme = {
 };
 const darkTheme = {
   colors: {
-    heading: "#fff",
-    text: "#fff",
-    white: "#000",
+    heading: "#e4e6eb",
+    text: "#e4e6eb",
+    white: "#050505",
     helper: "#8490ff",
     bg: "rgb(18 18 18)",
     footer_bg: "#0a1435",

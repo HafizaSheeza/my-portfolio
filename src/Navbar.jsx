@@ -65,7 +65,7 @@ font-weight: 600;
        text-align:center;
        flex-direction:column;
        gap:9rem;
-       background-color:#fff;
+       background-color:${({ theme }) => theme.colors.bg};
        transform:translateX(0%);
        visibility:hidden;
        opacity:0%;
@@ -73,7 +73,7 @@ font-weight: 600;
         .navbar-link {
           &:link,
           &:visited {
-            font-size: 4rem;
+            font-size: 2.3rem;
           }
 
           &:hover,
@@ -87,9 +87,10 @@ font-weight: 600;
     .mobile-navbar-btn{
         display:inline-block;
         z-index:999;
+        color:${({ theme }) => theme.colors.text};
         .mobile-nav-icon{
             font-size:3.2rem;
-            color:black;
+            color:${({ theme }) => theme.colors.text};
         }
     }
 
@@ -100,7 +101,7 @@ font-weight: 600;
         position:absolute;
         top:3%;
         right:10%;
-        color:black;
+        color: color:${({ theme }) => theme.colors.text};;
         z-index:999;
 
     }
