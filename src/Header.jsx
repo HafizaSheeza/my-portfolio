@@ -27,6 +27,7 @@ const MainHeader = styled.header`
    justify-content:space-between;
    align-items:center;
    box-shadow:${({ theme }) => theme.colors.headershadow};
+   border-bottom: 1px solid ${({ theme }) => theme.colors.border_header};
 .logo{
     margin-top:-15px;
 }
