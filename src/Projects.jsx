@@ -78,11 +78,15 @@ const Wrapper = styled.section`
     
     .card-project{
        
+    box-shadow: rgba(132, 144, 255, 0.3) 0px 2rem 2rem 0px;
         background-color:rgb(98 84 243);
         /* padding: 6rem; */
         max-width: 100%;
         margin: auto;
         border-radius: 1rem;
+    }
+    .card-project:hover{
+        transform: scale(0.96);
     }
     figure{
         display: flex;
@@ -95,10 +99,12 @@ const Wrapper = styled.section`
             width: 100%;
             height: 100%;
             padding: 1rem;
+            /* object-fit: cover; */
         }
         .caption{
             color: white;
             padding-bottom: 1rem;
+            font-size: 1.4rem;
         }
     }
 `

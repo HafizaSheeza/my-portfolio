@@ -84,7 +84,7 @@ footer{
     color:#fff;
    
    p{
-    color: ${({ theme }) => theme.colors.white};
+    color: #fff;
    }
     
     .footer-subscribe input{

@@ -18,6 +18,8 @@ body {
   overflow-x: hidden;
    scrollbar-color: rgb(98 84 243);
     scrollbar-width: thin;
+    background-color: ${({ theme }) => theme.colors.bg};
+    color: ${({ theme }) => theme.colors.text};
 }
 
 body::-webkit-scrollbar {
@@ -116,7 +118,7 @@ li {
     max-width: 16rem;
     margin-top: 2rem;
     background-color: ${({ theme }) => theme.colors.btn};
-    color: ${({ theme }) => theme.colors.white};
+    color: #fff;
     padding: 1.4rem 2.2rem;
     border-style: solid;
     border-width: .1rem;

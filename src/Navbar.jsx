@@ -2,7 +2,8 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { FaAlignJustify, FaTimes } from "react-icons/fa";
 import { useState } from "react";
-const Navbar = () => {
+import Toggle from './toggle';
+const Navbar = ({isOn, handleToggle }) => {
     const [active, setOpenMenu] = useState()
     return (<>
         <Nav>
@@ -22,6 +23,7 @@ const Navbar = () => {
                     <li>
                         <NavLink onClick={() => setOpenMenu(false)} className="navbar-link" to='/projects'>Project</NavLink>
                     </li>
+               <li><Toggle isOn={isOn} handleToggle={handleToggle}  /></li>     
                 </ul>
                 <div className="mobile-navbar-btn">
                     <FaAlignJustify
@@ -48,7 +50,7 @@ const Nav = styled.nav`
     display:none;
 }
  .navbar-link{
-color: black;
+color:${({ theme }) => theme.colors.text};;
 font-weight: 600;
 }
 @media (max-width:${({ theme }) => theme.media.mobile}) {
@@ -125,7 +127,7 @@ li{
 .navbar-link{
     &:hover,
     &:active{
-        color:black;
+        color:#6454f3;
     }
     &:link,&:visited{
          display:inline-block;

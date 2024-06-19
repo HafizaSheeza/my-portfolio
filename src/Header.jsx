@@ -4,13 +4,18 @@ import logo from './Images/logo.png';
 import styled from 'styled-components';
 import React from 'react';
 
-const Header = () => {
+const Header = ({isOn, handleToggle }) => {
     return (<>
 
         <MainHeader> <NavLink to="/">
-            <img src="./Images/sign.png" alt="reason" width="200px" height="auto" className='logo' />
-        </NavLink>
-            <Navbar /></MainHeader>
+            Sheeza Nawaz
+
+
+            {/* <img src="./Images/sign.png" alt="reason" width="200px" height="auto" className='logo' /> */}
+        </NavLink   >
+        
+           <Navbar  isOn={isOn} handleToggle={handleToggle}/>
+            </MainHeader>
     </>)
 };
 const MainHeader = styled.header`
@@ -21,9 +26,13 @@ const MainHeader = styled.header`
    display:flex;
    justify-content:space-between;
    align-items:center;
-   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   box-shadow:${({ theme }) => theme.colors.headershadow};
 .logo{
     margin-top:-15px;
+}
+a{
+    font-size: 3rem;
+    color:${({ theme }) => theme.colors.text};
 }
 @media (max-width:${({ theme }) => theme.media.mobile}) {
 
