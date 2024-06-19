@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import { FaSun, FaMoon } from 'react-icons/fa';
 const Switch = styled.label`
   position: relative;
   display: inline-block;
