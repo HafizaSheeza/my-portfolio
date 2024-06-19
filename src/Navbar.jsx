@@ -119,6 +119,7 @@ font-weight: 600;
 .navbar-list{
     display:flex;
     gap:4.8rem;
+    align-items: center;
 }
 li{
     list-style-type:none;
