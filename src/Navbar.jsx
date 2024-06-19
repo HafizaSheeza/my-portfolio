@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { FaAlignJustify, FaTimes } from "react-icons/fa";
 import { useState } from "react";
-import Toggle from './toggle';
+import Toggle from 'Toggle';
 const Navbar = ({isOn, handleToggle }) => {
     const [active, setOpenMenu] = useState()
     return (<>

@@ -179,11 +179,5 @@ hr{
      .footer-bottom--section {
       padding-top: 3rem;
     }
-  }
-  
- 
-}
-
-
-`;
+  }`;
 export default Footer;
