@@ -109,6 +109,7 @@ picture img{
 .hero-heading{
     // text-transform:uppercase;
     font-size:5rem;
+    font-weight: 400;
 }
 .hero-para{
     margin-top:1.5rem;

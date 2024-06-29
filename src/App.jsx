@@ -79,7 +79,7 @@ function App() {
         
           <Routes>
          
-            <Route exact path='/' element={<Home />} />
+            <Route exact path='/'  element={<Home isOn={theme === darkTheme} handleToggle={toggleTheme} />} />
             <Route exact path='contact' element={<Contact />} />
 
             <Route exact path='service' element={<Service />} />
